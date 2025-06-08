@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -22,6 +23,7 @@
                 <a href="#services" class="nav-link">Services</a>
                 <a href="#inventory" class="nav-link">Sales</a>
                 <a href="#about" class="nav-link">About</a>
+                <a href="faq.html" class="nav-link">FAQs</a>
                 <a href="#contact" class="nav-link contact-btn">Contact Us</a>
             </div>
             <div class="hamburger" id="hamburger">
@@ -326,16 +328,16 @@
                     <h3>Send us a message</h3>
                     <form>
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" placeholder="Phone Number">
+                            <input type="tel" name="phone" placeholder="Phone Number">
                         </div>
                         <div class="form-group">
-                            <select required>
+                            <select name="service" required>
                                 <option value="">Select Service</option>
                                 <option value="sales">Sales Inquiry</option>
                                 <option value="service">Service Request</option>
@@ -344,7 +346,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Tell us about your needs..." rows="4"></textarea>
+                            <textarea name="message" placeholder="Tell us about your needs..." rows="4"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
@@ -361,9 +363,9 @@
                     <h3>East Cobb Carts</h3>
                     <p>Your trusted golf cart connection for the East Cobb and Roswell areas.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="javascript:void(0)" onclick="alert('Facebook page coming soon!')"><i class="fab fa-facebook"></i></a>
+                        <a href="javascript:void(0)" onclick="alert('Instagram page coming soon!')"><i class="fab fa-instagram"></i></a>
+                        <a href="javascript:void(0)" onclick="alert('YouTube channel coming soon!')"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 

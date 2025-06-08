@@ -360,34 +360,66 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, 500);
 
-    // Contact form handling
+    // Initialize EmailJS
+    emailjs.init("GU7qZLHpItA1asy9l"); // Replace with your EmailJS public key
+
+    // Contact form handling with EmailJS
     const contactForm = document.querySelector('.contact-form form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
+            // Get form fields by their input elements
+            const nameField = this.querySelector('input[name="name"]');
+            const emailField = this.querySelector('input[name="email"]');
+            const phoneField = this.querySelector('input[name="phone"]');
+            const serviceField = this.querySelector('select[name="service"]');
+            const messageField = this.querySelector('textarea[name="message"]');
             
             // Simple validation
-            if (!data.name || !data.email) {
-                alert('Please fill in all required fields.');
+            if (!nameField.value.trim() || !emailField.value.trim() || !serviceField.value) {
+                alert('Please fill in all required fields (Name, Email, and Service Type).');
                 return;
             }
             
-            // Simulate form submission
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailField.value.trim())) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            
+            // Prepare form data for EmailJS
+            const templateParams = {
+                from_name: nameField.value.trim(),
+                from_email: emailField.value.trim(),
+                phone: phoneField.value.trim() || 'Not provided',
+                service_type: serviceField.value,
+                message: messageField.value.trim() || 'No additional message provided',
+                //to_email: 'wrench@eastcobbcarts.com'
+                to_email: 'kenneth.ayers.iii@gmail.com'
+            };
+            
+            // Submit form
             const submitBtn = this.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
             submitBtn.textContent = 'Sending...';
             submitBtn.disabled = true;
             
-            setTimeout(() => {
-                alert('Thank you for your message! We\'ll get back to you soon.');
-                this.reset();
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }, 2000);
+            // Send email using EmailJS
+            emailjs.send('service_pnfphxp', 'YOUR_TEMPLATE_ID', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Thank you for your message! We\'ll get back to you soon.');
+                    contactForm.reset();
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('Sorry, there was an error sending your message. Please call us at 404-669-6980 or email wrench@eastcobbcarts.com directly.');
+                })
+                .finally(function() {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                });
         });
     }
 
