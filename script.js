@@ -407,7 +407,7 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.disabled = true;
             
             // Send email using EmailJS
-            emailjs.send('service_pnfphxp', 'YOUR_TEMPLATE_ID', templateParams)
+            emailjs.send('service_pnfphxp', 'template_8z9in7e', templateParams)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
                     alert('Thank you for your message! We\'ll get back to you soon.');

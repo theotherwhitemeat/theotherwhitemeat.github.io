@@ -394,6 +394,356 @@
     transform: translateY(-2px);
 }
 
+/* Legal Links */
+.legal-links {
+    margin: 1.5rem 0;
+}
+
+.legal-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #667eea;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.legal-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+    border-color: #667eea;
+}
+
+/* Safety Reminder */
+.safety-reminder {
+    background: linear-gradient(135deg, #dcfce7 0%, #f0fdf4 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #22c55e;
+    margin-top: 1.5rem;
+}
+
+.safety-reminder h4 {
+    color: #166534;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+/* Enhanced Maintenance Grid */
+.maintenance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.maintenance-item {
+    background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.maintenance-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.maintenance-item.critical {
+    border-color: #dc2626;
+    background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+    position: relative;
+}
+
+.maintenance-item.critical::before {
+    content: '🔴 CRITICAL';
+    position: absolute;
+    top: -10px;
+    right: 1rem;
+    background: #dc2626;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.maintenance-item.warning {
+    border-color: #f59e0b;
+    background: linear-gradient(135deg, #fefbf3 0%, #ffffff 100%);
+    position: relative;
+}
+
+.maintenance-item.warning::before {
+    content: '⚠️ WARNING';
+    position: absolute;
+    top: -10px;
+    right: 1rem;
+    background: #f59e0b;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.maintenance-item h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    color: #1a202c;
+}
+
+.maintenance-item i {
+    color: #667eea;
+}
+
+/* Critical Warning Box */
+.critical-warning {
+    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+    border: 2px solid #dc2626;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.critical-warning h4 {
+    color: #dc2626;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* Enhanced Storage Tips */
+.storage-tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.tip {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.tip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.tip.critical {
+    border-color: #dc2626;
+    background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+}
+
+.tip i {
+    color: #667eea;
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+.tip.critical i {
+    color: #dc2626;
+}
+
+.tip h4 {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #1a202c;
+}
+
+/* Enhanced Voltage Guide */
+.voltage-guide {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.voltage-option {
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.voltage-option.recommended {
+    border-color: #22c55e;
+    background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+    position: relative;
+}
+
+.voltage-option.recommended::before {
+    content: '✅ RECOMMENDED';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #22c55e;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.voltage-option:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.voltage-option h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #1a202c;
+}
+
+/* Danger Warning */
+.danger-warning {
+    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+    border: 3px solid #dc2626;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.danger-warning h4 {
+    color: #dc2626;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.danger-warning p {
+    color: #374151;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* Enhanced Lift Types */
+.lift-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.lift-type {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.lift-type:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.lift-type h4 {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #1a202c;
+}
+
+/* Tire Considerations */
+.tire-considerations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.consideration {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.consideration:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.consideration.warning {
+    border-color: #f59e0b;
+    background: linear-gradient(135deg, #fefbf3 0%, #ffffff 100%);
+}
+
+.consideration h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    color: #1a202c;
+}
+
+.consideration i {
+    color: #667eea;
+}
+
+.consideration.warning i {
+    color: #f59e0b;
+}
+
+/* Accessory Options */
+.accessory-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.accessory {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.accessory:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.accessory h4 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1a202c;
+}
+
+.accessory ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.accessory li {
+    margin-bottom: 0.5rem;
+    color: #374151;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .faq-hero {
@@ -446,6 +796,35 @@
         width: 100%;
         max-width: 300px;
         justify-content: center;
+    }
+    
+    .maintenance-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .storage-tips {
+        grid-template-columns: 1fr;
+    }
+    
+    .voltage-guide {
+        grid-template-columns: 1fr;
+    }
+    
+    .lift-types {
+        grid-template-columns: 1fr;
+    }
+    
+    .tire-considerations {
+        grid-template-columns: 1fr;
+    }
+    
+    .accessory-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .danger-warning {
+        padding: 1.5rem;
+        text-align: left;
     }
 }
 
