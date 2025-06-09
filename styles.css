@@ -40,7 +40,26 @@ body {
     align-items: center;
 }
 
-.nav-logo h2 {
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.nav-logo a {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+}
+
+.logo-image {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-text {
     font-size: 1.5rem;
     font-weight: 700;
     color: #1a1a1a;
@@ -73,7 +92,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2d5016 0%, #9cb83d 100%);
     transition: width 0.3s ease;
 }
 
@@ -82,7 +101,7 @@ body {
 }
 
 .contact-btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2d5016 0%, #9cb83d 100%);
     color: white !important;
     padding: 0.75rem 1.5rem;
     border-radius: 50px;
@@ -96,7 +115,7 @@ body {
 
 .contact-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 10px 25px rgba(45, 80, 22, 0.3);
 }
 
 .hamburger {
@@ -119,7 +138,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    background: linear-gradient(135deg, #2d5016 0%, #4a7c23 50%, #9cb83d 100%);
     overflow: hidden;
 }
 
@@ -273,7 +292,7 @@ body {
     position: absolute;
     top: 1rem;
     left: 1rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2d5016 0%, #9cb83d 100%);
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 25px;
@@ -385,7 +404,7 @@ body {
 .service-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2d5016 0%, #9cb83d 100%);
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -418,7 +437,7 @@ body {
 }
 
 .feature {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2d5016 0%, #9cb83d 100%);
     color: white;
     padding: 0.25rem 0.75rem;
     border-radius: 15px;
@@ -456,7 +475,7 @@ body {
 .step-number {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2d5016 0%, #9cb83d 100%);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -513,14 +532,14 @@ body {
 }
 
 .cart-listing.featured {
-    border: 2px solid #667eea;
+    border: 2px solid #2d5016;
 }
 
 .listing-badge {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2d5016 0%, #9cb83d 100%);
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 15px;
@@ -554,7 +573,7 @@ body {
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2d5016 0%, #9cb83d 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -634,7 +653,7 @@ body {
 .about-feature i {
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2d5016 0%, #9cb83d 100%);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -671,7 +690,7 @@ body {
 }
 
 .zip {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2d5016 0%, #9cb83d 100%);
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 15px;
@@ -759,7 +778,7 @@ body {
 .method-icon {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2d5016 0%, #9cb83d 100%);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -815,7 +834,7 @@ body {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #2d5016;
     background: white;
 }
 
@@ -846,7 +865,7 @@ body {
 
 .footer-section h3 {
     font-size: 1.5rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2d5016 0%, #9cb83d 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -899,7 +918,7 @@ body {
 }
 
 .social-links a:hover {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2d5016 0%, #9cb83d 100%);
     transform: translateY(-2px);
 }
 
@@ -1168,7 +1187,7 @@ html {
 }
 
 .package-badge {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2d5016 0%, #9cb83d 100%);
     color: white;
 }
 
@@ -1233,7 +1252,7 @@ html {
 }
 
 .feature-item i {
-    color: #667eea;
+    color: #2d5016;
     font-size: 0.8rem;
 }
 
@@ -1256,7 +1275,7 @@ html {
 }
 
 .option-item .option-price {
-    color: #667eea;
+    color: #2d5016;
     font-weight: 700;
     float: right;
 }
@@ -1357,7 +1376,7 @@ html {
     width: 30px;
     height: 30px;
     border: 3px solid #e2e8f0;
-    border-top: 3px solid #667eea;
+    border-top: 3px solid #2d5016;
     border-radius: 50%;
     animation: spin 1s linear infinite;
     transform: translate(-50%, -50%);
@@ -1399,7 +1418,7 @@ html {
 }
 
 .error-message a {
-    color: #667eea;
+    color: #2d5016;
     text-decoration: none;
     font-weight: 600;
 }
