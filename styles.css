@@ -823,8 +823,33 @@ body {
 }
 
 .method-info span {
+    font-size: 1.1rem;
+    color: #1a1a1a;
+}
+
+.qr-code-section {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+    border: 1px solid #e2e8f0;
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code-text {
+    margin-top: 1rem;
     color: #6b7280;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .contact-form {
@@ -1011,6 +1036,11 @@ body {
         margin-bottom: 1.5rem;
     }
 
+    .qr-code-section {
+        margin: 2rem auto;
+        max-width: 300px;
+    }
+
     .services-grid {
         grid-template-columns: 1fr;
     }
@@ -1073,6 +1103,11 @@ body {
 
     .cheers-logo {
         max-width: 150px;
+    }
+
+    .qr-code {
+        width: 120px;
+        height: 120px;
     }
 
     .about-image img {
