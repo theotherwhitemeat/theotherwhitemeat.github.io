@@ -15,13 +15,17 @@ window.CART_CONFIG = {
       "pricingNote": "+ local sales tax",
       "description": "Never Driven - you can be the first owner!",
       "longDescription": "This cart has never been driven - recently delivered and comes with extended warranty. Independent suspension gives this cart a very smooth ride.",
-      "imageFolder": "img/karts/2023_yamaga_drive2",
-      "mainImage": "img/karts/2023_yamaga_drive2/f66404c88e6f0bacf3dca055dfa6a98c_fit.jpg",
+      "imageFolder": "img/karts/2023_drive2_no1",
+      "mainImage": "img/karts/2023_drive2_no1/IMG_9829.JPG",
       "images": [
-        "img/karts/2023_yamaga_drive2/f66404c88e6f0bacf3dca055dfa6a98c_fit.jpg",
-        "img/karts/2023_yamaga_drive2/b64a1240d662306a524c437d410fbbf3_fit.jpg",
-        "img/karts/2023_yamaga_drive2/37cb4e55153e5f3b33fb64a280458c0b_fit.jpg",
-        "img/karts/2023_yamaga_drive2/dd322d2cf096771726bb02811929a56e_fit.jpg"
+        "img/karts/2023_drive2_no1/IMG_9829.JPG",
+        "img/karts/2023_drive2_no1/IMG_9830.JPG",
+        "img/karts/2023_drive2_no1/IMG_9831.JPG",
+        "img/karts/2023_drive2_no1/IMG_9832.JPG",
+        "img/karts/2023_drive2_no1/IMG_9833.JPG",
+        "img/karts/2023_drive2_no1/IMG_9835.JPG",
+        "img/karts/2023_drive2_no1/IMG_9836.JPG",
+        "img/karts/2023_drive2_no1/IMG_9838.JPG"
       ],
       "features": [
         {
@@ -78,7 +82,7 @@ window.CART_CONFIG = {
         {
           "name": "Lithium Ion batteries",
           "price": 1500,
-          "description": "Upgrade to maintenance-free lithium-ion batteries"
+          "description": "Lithium Ion batteries available for $1500 upcharge"
         }
       ],
       "available": true,
@@ -96,10 +100,10 @@ window.CART_CONFIG = {
       "pricingNote": "+ local sales tax",
       "description": "*** This cart has just been sold - check out our other inventory! ***",
       "longDescription": "This cart has never been driven - recently delivered and comes with extended warranty. Independent suspension gives this cart a very smooth ride.",
-      "imageFolder": "img/karts/2023_yamaga_drive2",
-      "mainImage": "img/karts/2023_yamaga_drive2/f66404c88e6f0bacf3dca055dfa6a98c_fit.jpg",
+      "imageFolder": "img/karts/2023_drive2_no1",
+      "mainImage": "img/karts/2023_drive2_no1/IMG_9830.JPG",
       "images": [
-        "img/karts/2023_yamaga_drive2/f66404c88e6f0bacf3dca055dfa6a98c_fit.jpg"
+        "img/karts/2023_drive2_no1/IMG_9830.JPG"
       ],
       "features": [
         {
@@ -156,7 +160,7 @@ window.CART_CONFIG = {
         {
           "name": "Lithium Ion batteries",
           "price": 1500,
-          "description": "Upgrade to maintenance-free lithium-ion batteries"
+          "description": "Lithium Ion batteries available for $1500 upcharge"
         }
       ],
       "available": false,
@@ -174,12 +178,19 @@ window.CART_CONFIG = {
       "pricingNote": "+ local sales tax",
       "description": "Sport package with upgraded wheels and low profile tires",
       "longDescription": "From the most trusted brand in golf carts with their all-aluminum frame - these carts are some of the longest lasting carts available.",
-      "imageFolder": "img/karts/2020_club_car_tempo",
-      "mainImage": "img/karts/2020_club_car_tempo/8771e17b8664894525ce7334494890f5_fit.jpg",
+      "imageFolder": "img/karts/2020_tempo_sport_no1",
+      "mainImage": "img/karts/2020_tempo_sport_no1/Tempo1.JPG",
       "images": [
-        "img/karts/2020_club_car_tempo/8771e17b8664894525ce7334494890f5_fit.jpg",
-        "img/karts/2020_club_car_tempo/c61fa71bdb07fafa65079d0fe8bb6d1a_fit.jpg",
-        "img/karts/2020_club_car_tempo/f949b8ff67c4254675776160b9dfc42e_fit.jpg"
+        "img/karts/2020_tempo_sport_no1/Tempo1.JPG",
+        "img/karts/2020_tempo_sport_no1/Tempo2.JPG",
+        "img/karts/2020_tempo_sport_no1/Tempo4.JPG",
+        "img/karts/2020_tempo_sport_no1/Tempo5.JPG",
+        "img/karts/2020_tempo_sport_no1/Tempo6.JPG",
+        "img/karts/2020_tempo_sport_no1/Tempo7.JPG",
+        "img/karts/2020_tempo_sport_no1/Tempo9.JPG",
+        "img/karts/2020_tempo_sport_no1/Tempo10.JPG",
+        "img/karts/2020_tempo_sport_no1/Tempo12.JPG",
+        "img/karts/2020_tempo_sport_no1/Tempo21.JPG"
       ],
       "features": [
         {
@@ -231,7 +242,7 @@ window.CART_CONFIG = {
         {
           "name": "Lithium Ion batteries",
           "price": 1500,
-          "description": "Upgrade to maintenance-free lithium-ion batteries"
+          "description": "Lithium Ion batteries available for $1500 upcharge"
         }
       ],
       "available": true,
@@ -249,12 +260,17 @@ window.CART_CONFIG = {
       "pricingNote": "+ local sales tax",
       "description": "Family+ package with upgraded hubcaps",
       "longDescription": "From the most trusted brand in golf carts with their all-aluminum frame and high build quality, these are some of the longest lasting carts available.",
-      "imageFolder": "img/karts/2020_club_car_tempo",
-      "mainImage": "img/karts/2020_club_car_tempo/c61fa71bdb07fafa65079d0fe8bb6d1a_fit.jpg",
+      "imageFolder": "img/karts/2020_tempo_familyplus_no1",
+      "mainImage": "img/karts/2020_tempo_familyplus_no1/Tempo4.JPG",
       "images": [
-        "img/karts/2020_club_car_tempo/c61fa71bdb07fafa65079d0fe8bb6d1a_fit.jpg",
-        "img/karts/2020_club_car_tempo/8771e17b8664894525ce7334494890f5_fit.jpg",
-        "img/karts/2020_club_car_tempo/f949b8ff67c4254675776160b9dfc42e_fit.jpg"
+        "img/karts/2020_tempo_familyplus_no1/Tempo4.JPG",
+        "img/karts/2020_tempo_familyplus_no1/Tempo5.JPG",
+        "img/karts/2020_tempo_familyplus_no1/Tempo6.JPG",
+        "img/karts/2020_tempo_familyplus_no1/Tempo14.JPG",
+        "img/karts/2020_tempo_familyplus_no1/Tempo15.JPG",
+        "img/karts/2020_tempo_familyplus_no1/Tempo16.JPG",
+        "img/karts/2020_tempo_familyplus_no1/Tempo17.JPG",
+        "img/karts/2020_tempo_familyplus_no1/Tempo21.JPG"
       ],
       "features": [
         {
@@ -306,7 +322,7 @@ window.CART_CONFIG = {
         {
           "name": "Lithium Ion batteries",
           "price": 1500,
-          "description": "Upgrade to maintenance-free lithium-ion batteries"
+          "description": "Lithium Ion batteries available for $1500 upcharge"
         }
       ],
       "available": true,
@@ -324,12 +340,17 @@ window.CART_CONFIG = {
       "pricingNote": "+ local sales tax",
       "description": "Basic family package with standard features",
       "longDescription": "From the most trusted brand in golf carts with their all-aluminum frame and high build quality, these are some of the longest lasting carts available.",
-      "imageFolder": "img/karts/2020_club_car_tempo",
-      "mainImage": "img/karts/2020_club_car_tempo/f949b8ff67c4254675776160b9dfc42e_fit.jpg",
+      "imageFolder": "img/karts/2020_tempo_family_no1",
+      "mainImage": "img/karts/2020_tempo_family_no1/IMG_9829.JPG",
       "images": [
-        "img/karts/2020_club_car_tempo/f949b8ff67c4254675776160b9dfc42e_fit.jpg",
-        "img/karts/2020_club_car_tempo/8771e17b8664894525ce7334494890f5_fit.jpg",
-        "img/karts/2020_club_car_tempo/c61fa71bdb07fafa65079d0fe8bb6d1a_fit.jpg"
+        "img/karts/2020_tempo_family_no1/IMG_9829.JPG",
+        "img/karts/2020_tempo_family_no1/IMG_9830.JPG",
+        "img/karts/2020_tempo_family_no1/IMG_9831.JPG",
+        "img/karts/2020_tempo_family_no1/IMG_9832.JPG",
+        "img/karts/2020_tempo_family_no1/IMG_9833.JPG",
+        "img/karts/2020_tempo_family_no1/IMG_9835.JPG",
+        "img/karts/2020_tempo_family_no1/IMG_9836.JPG",
+        "img/karts/2020_tempo_family_no1/IMG_9838.JPG"
       ],
       "features": [
         {
@@ -381,7 +402,7 @@ window.CART_CONFIG = {
         {
           "name": "Lithium Ion batteries",
           "price": 1500,
-          "description": "Upgrade to maintenance-free lithium-ion batteries"
+          "description": "Lithium Ion batteries available for $1500 upcharge"
         }
       ],
       "available": true,
@@ -393,16 +414,16 @@ window.CART_CONFIG = {
       "make": "Yamaha",
       "model": "Drive 2",
       "package": "Sport Package",
-      "status": "available",
+      "status": "coming_soon",
       "condition": "used",
       "price": 5395,
       "pricingNote": "+ local sales tax",
       "description": "Sport package with polished wheels and upgraded lighting",
       "longDescription": "Top-tier cart manufacturer known for excellent handling and strong reliability.",
-      "imageFolder": "img/karts/2023_yamaga_drive2",
-      "mainImage": "img/karts/2023_yamaga_drive2/b64a1240d662306a524c437d410fbbf3_fit.jpg",
+      "imageFolder": "img",
+      "mainImage": "img/cart_silo.jpg",
       "images": [
-        "img/karts/2023_yamaga_drive2/b64a1240d662306a524c437d410fbbf3_fit.jpg"
+        "img/cart_silo.jpg"
       ],
       "features": [
         {
@@ -454,10 +475,10 @@ window.CART_CONFIG = {
         {
           "name": "Lithium Ion batteries",
           "price": 1500,
-          "description": "Upgrade to maintenance-free lithium-ion batteries"
+          "description": "Lithium Ion batteries available for $1500 upcharge"
         }
       ],
-      "available": true,
+      "available": false,
       "priority": 3
     },
     {
@@ -466,16 +487,16 @@ window.CART_CONFIG = {
       "make": "Yamaha",
       "model": "Drive 2",
       "package": "Family Package",
-      "status": "available",
+      "status": "coming_soon",
       "condition": "used",
       "price": 4895,
       "pricingNote": "+ local sales tax",
       "description": "Reliable family package with standard features",
       "longDescription": "Top-tier cart manufacturer known for excellent handling and strong reliability.",
-      "imageFolder": "img/karts/2023_yamaga_drive2",
-      "mainImage": "img/karts/2023_yamaga_drive2/37cb4e55153e5f3b33fb64a280458c0b_fit.jpg",
+      "imageFolder": "img",
+      "mainImage": "img/cart_silo.jpg",
       "images": [
-        "img/karts/2023_yamaga_drive2/37cb4e55153e5f3b33fb64a280458c0b_fit.jpg"
+        "img/cart_silo.jpg"
       ],
       "features": [
         {
@@ -527,10 +548,10 @@ window.CART_CONFIG = {
         {
           "name": "Lithium Ion batteries",
           "price": 1500,
-          "description": "Upgrade to maintenance-free lithium-ion batteries"
+          "description": "Lithium Ion batteries available for $1500 upcharge"
         }
       ],
-      "available": true,
+      "available": false,
       "priority": 6
     }
   ],
@@ -540,8 +561,8 @@ window.CART_CONFIG = {
     "defaultWarranty": "90-day ECC warranty",
     "imageFormats": ["jpg", "jpeg", "png", "webp"],
     "displayOptions": {
-      "showSoldItems": false,
-      "maxItemsPerPage": 6,
+      "showSoldItems": true,
+      "maxItemsPerPage": 10,
       "sortBy": "priority",
       "featuredFirst": true
     }
@@ -550,6 +571,6 @@ window.CART_CONFIG = {
     "lastUpdated": "2025-01-27",
     "version": "1.0",
     "totalInventory": 7,
-    "availableInventory": 6
+    "availableInventory": 4
   }
 }; 

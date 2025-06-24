@@ -22,7 +22,7 @@ function generateInventoryHTML(config) {
 
     // Filter and sort inventory
     let inventory = config.inventory.filter(cart => {
-        if (!config.settings.displayOptions.showSoldItems && !cart.available) {
+        if (!config.settings.displayOptions.showSoldItems && (!cart.available || cart.status === 'sold')) {
             return false;
         }
         return true;
@@ -41,6 +41,7 @@ function generateInventoryHTML(config) {
     inventory.forEach(cart => {
         const featuredClass = cart.status === 'featured' ? 'featured' : '';
         const soldClass = !cart.available ? 'sold' : '';
+        const comingSoonClass = cart.status === 'coming_soon' ? 'coming-soon' : '';
         
         // Generate features HTML
         const featuresHTML = cart.features
@@ -50,9 +51,10 @@ function generateInventoryHTML(config) {
             .join('\n                            ');
 
         html += `
-                <div class="cart-listing ${featuredClass} ${soldClass}" data-cart-id="${cart.id}">
+                <div class="cart-listing ${featuredClass} ${soldClass} ${comingSoonClass}" data-cart-id="${cart.id}">
                     ${cart.status === 'featured' ? '<div class="listing-badge">Featured</div>' : ''}
                     ${!cart.available ? '<div class="listing-badge sold-badge">Sold</div>' : ''}
+                    ${cart.status === 'coming_soon' ? '<div class="listing-badge coming-soon-badge">Coming Soon</div>' : ''}
                     <img src="${cart.mainImage}" alt="${cart.year} ${cart.make} ${cart.model}" loading="lazy">
                     <div class="listing-content">
                         <h3>${cart.year} ${cart.make} ${cart.model}</h3>
@@ -61,8 +63,10 @@ function generateInventoryHTML(config) {
                         <div class="features">
                             ${featuresHTML}
                         </div>
-                        ${cart.available ? 
+                        ${cart.available && cart.status !== 'coming_soon' ? 
                             `<button class="btn btn-primary" onclick="viewCartDetails('${cart.id}')">View Details</button>` :
+                            cart.status === 'coming_soon' ?
+                            `<button class="btn btn-secondary disabled" disabled>Coming Soon</button>` :
                             `<button class="btn btn-secondary disabled" disabled>Sold</button>`
                         }
                     </div>
@@ -122,18 +126,6 @@ function showCartDetailsModal(cart) {
                             <span class="condition-badge">${cart.condition.charAt(0).toUpperCase() + cart.condition.slice(1)}</span>
                         </div>
                         <p class="description">${cart.longDescription}</p>
-                        
-                        <div class="specifications">
-                            <h4>Specifications</h4>
-                            <div class="spec-grid">
-                                ${Object.entries(cart.specifications).map(([key, value]) => `
-                                    <div class="spec-item">
-                                        <span class="spec-label">${key.charAt(0).toUpperCase() + key.slice(1)}:</span>
-                                        <span class="spec-value">${value}</span>
-                                    </div>
-                                `).join('')}
-                            </div>
-                        </div>
 
                         <div class="features-section">
                             <h4>Features</h4>
@@ -175,6 +167,18 @@ function showCartDetailsModal(cart) {
                                 </a>
                             </div>
                         </div>
+                    </div>
+                </div>
+                
+                <div class="specifications-full">
+                    <h4>Specifications</h4>
+                    <div class="spec-grid">
+                        ${Object.entries(cart.specifications).map(([key, value]) => `
+                            <div class="spec-item">
+                                <span class="spec-label">${key.charAt(0).toUpperCase() + key.slice(1)}:</span>
+                                <span class="spec-value">${value}</span>
+                            </div>
+                        `).join('')}
                     </div>
                 </div>
             </div>
