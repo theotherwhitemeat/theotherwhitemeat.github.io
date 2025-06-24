@@ -145,9 +145,11 @@ function showCartDetailsModal(cart) {
                             <div class="options-list">
                                 ${cart.options.map(option => `
                                     <div class="option-item">
-                                        <span class="option-name">${option.name}</span>
-                                        <span class="option-price">+$${option.price.toLocaleString()}</span>
-                                        <p class="option-description">${option.description}</p>
+                                        <div>
+                                            <div class="option-name">${option.name}</div>
+                                            <div class="option-description">${option.description}</div>
+                                        </div>
+                                        <div class="option-price">+$${option.price.toLocaleString()}</div>
                                     </div>
                                 `).join('')}
                             </div>
